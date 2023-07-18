@@ -1,0 +1,32 @@
+* {box-sizing: border-box;}
+div {background-color: lavender;border: 1px solid black;margin-bottom: 10px;}
+h1 {font-size: 175%; text-align: center;font-family: Calibri, sans-serif;}
+div {position: relative;}
+.header {position: absolute; right: 0px;font-family: Calibri, sans-serif; font-size: 125%; margin: 0px; 
+	width: 150px; text-align: center;padding-top: 5px;padding-bottom: 5px;margin-bottom: 5px;border:1px solid black; border-right: 0;}
+.boxes div:nth-child(1) .header {background-color: lightcoral;}
+.boxes div:nth-child(2) .header {background-color: lightblue;}
+.boxes div:nth-child(3) .header {background-color: lightcyan;}
+
+.text {margin:0px;margin-top: 25px; padding: 20px; text-align: justify;font-family: Calibri, sans-serif;}
+
+/*Styles for Small Screens*/
+@media (max-width: 767px) {body {margin-left: 40px; margin-right: 40px;} div {margin-bottom: 20px;}}
+
+
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+	body {margin-left: 30px; margin-right: 30px;} 
+	div {margin-bottom: 20px;box-sizing: border-box;} 
+	div:nth-child(1) {width: calc(50% - 10px);float: left; margin-right: 10px;height: 200px; overflow: hidden;} 
+	div:nth-child(2) {width: calc(50% - 10px); float: left; margin-left: 10px; height: 200px; overflow: hidden;} 
+	div:nth-child(3)  {clear: left;} }
+
+
+/* Styles for large screens */
+@media (min-width: 992px) {
+	body {margin-left: 20px; margin-right: 20px;} div {margin-bottom: 20px;} 
+	div:nth-child(1) {width: calc(33.33% - 20px); margin-right: 20px;float: left; height: 200px; overflow: hidden;}  
+	div:nth-child(2) {width: calc(33.33% - 10px); margin-right: 10px;float: left; height: 200px; overflow: hidden;} 
+	div:nth-child(3) {width: calc(33.33% - 10px); margin-left: 10px;float: left; height: 200px; overflow: hidden;} }
