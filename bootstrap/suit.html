@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angled Asymmetry Official Website</title>
+	<!--linking to style sheets-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--linking to the Google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<!--Content of the front page starts now-->
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<!--Container for the header-->
+			<div class="container">
+				<div class="navbar-header"><!--Top left clickable logo image-->
+					<a href="index.html" class="pull-left visible-sm visible-md visible-lg" ><div id="logo-img" alt="Logo Image"></div></a> 
+				</div>
+				<div class="navbar-brand pull-left"><!--Company name and slogan-->
+					<a href="index.html"><h1 id="company-name">Angled Asymmetry</h1></a>
+					<span class="visible-sm visible-md visible-lg">Like no one else.</span>
+					<span class="visible-xs">Like no one else. <a id="phone-link" href="tel:1234567890">&nbsp;&nbsp;123-456-7890 BEGIN.</a></span>
+				</div>
+				
+				<!--responsive menu and button, from bootstrap 3.4.1 documentation online-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+
+		      	<!--ul of the items inside the menu, from bootstrap 3.4.1 documentation online-->
+			    <div id="collapsable-nav" class="collapse navbar-collapse">
+		           <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+		           	<li class="visible-xs">
+		              <a id="home-menu" href="index.html">
+		                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+		            </li>
+		            <li>
+		              <a href="catalog.html">
+		                <span class="glyphicon glyphicon-qrcode"></span><br class="hidden-xs"> Catalog</a>
+		            </li>
+		            <li>
+		              <a href="aboutus.html"><!--or could be relative link to the area of the index.html-->
+		                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+		            </li>
+		            <li>
+		              <a href="location.html"><!--or could be relative link to the area of the index.html-->
+		                <span class="glyphicon glyphicon-map-marker"></span><br class="hidden-xs"> Location</a>
+		            </li>
+		            <li id="phone" class="hidden-xs">
+		              <a href="tel:410-602-5008">
+		                <span>123-456-7890</span><div>Begin.</div></a>
+		            </li>
+		          </ul><!-- #nav-list -->
+	        	</div><!-- .collapse .navbar-collapse -->
+ 			</div><!-- .container-->
+		</nav><!--.navbar .navbar-default-->
+	</header><!--header end-->
+
+	<!--Container for the Main content-->
+<div id="main-content" class="container">
+	<h2 id="suit-title" class="text-center">2-Piece Suits</h2>
+		<div id="suit-text" class="text-center">Discover Angled Asymmetry's 2-Piece Suit Catalog, where contemporary design meets impeccable tailoring, offering a seamless blend of style and sophistication. Elevate your wardrobe with our meticulously crafted ensembles and make a lasting impression wherever you go.</div>
+	
+		<section id="suit-row" class="row">
+			<div class="suit-item-tile col-lg-6 col-md-6 col-sm-6">
+				<div class="row">
+					<!--The internal grid, this is the first, aka the suit item photo-->
+					<div class="col-sm-4 col-md-4 ">
+						<div class="suit-item-photo">
+							<div class="glyphicon glyphicon-hourglass"></div>
+							<img class="img-responsive" src="img/suit-item.jpeg" alt="suit item one">
+						</div>
+					</div>
+					<!--The second part of the internal grid where the item descriptions are-->
+					<div class="item-text col-sm-8 col-md-8">
+						<h3 class="suit-item-title">2-Piece Suit in Sand Gold</h3>
+							<p class="suit-item-details">Elevate your formal attire with our impeccably tailored 2-Piece Suit in Sand Gold, exuding timeless sophistication and refined style.</p>
+							<p class="suit-item-details">Available in bespoke sizings.</p>
+							<br class="price-break">
+							<p class="suit-item-price">$3000</p>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="suit-item-tile col-lg-6 col-md-6 col-sm-6">
+				<div class="row">
+					<!--The internal grid, this is the first, aka the suit item photo-->
+					<div class="col-sm-4 col-md-4">
+						<div class="suit-item-photo">
+							<div class="glyphicon glyphicon-hourglass"></div>
+							<img class="img-responsive" src="img/suit-item.jpeg" alt="suit item one">
+						</div>
+					</div>
+					<!--The second part of the internal grid where the item descriptions are-->
+					<div class="item-text col-sm-8 col-md-8">
+						<h3 class="suit-item-title">2-Piece Suit in Sand Gold</h3>
+							<p class="suit-item-details">Elevate your formal attire with our impeccably tailored 2-Piece Suit in Sand Gold, exuding timeless sophistication and refined style.</p>
+							<p class="suit-item-details">Available in bespoke sizings.</p>
+							<br class="price-break">
+							<p class="suit-item-price">$3000</p>
+					</div>
+					
+
+				</div>
+			</div>
+
+			<div class="suit-item-tile col-lg-6 col-md-6 col-sm-6">
+				<div class="row">
+					<!--The internal grid, this is the first, aka the suit item photo-->
+					<div class="col-sm-4 col-md-4 ">
+						<div class="suit-item-photo">
+							<div class="glyphicon glyphicon-hourglass"></div>
+							<img class="img-responsive" src="img/suit-item.jpeg" alt="suit item one">
+						</div>
+					</div>
+					<!--The second part of the internal grid where the item descriptions are-->
+					<div class="item-text col-sm-8 col-md-8">
+						<h3 class="suit-item-title">2-Piece Suit in Sand Gold</h3>
+							<p class="suit-item-details">Elevate your formal attire with our impeccably tailored 2-Piece Suit in Sand Gold, exuding timeless sophistication and refined style.</p>
+							<p class="suit-item-details">Available in bespoke sizings.</p>
+							<br class="price-break">
+							<p class="suit-item-price">$3000</p>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="suit-item-tile col-lg-6 col-md-6 col-sm-6">
+				<div class="row">
+					<!--The internal grid, this is the first, aka the suit item photo-->
+					<div class="col-sm-4 col-md-4">
+						<div class="suit-item-photo">
+							<div class="glyphicon glyphicon-hourglass"></div>
+							<img class="img-responsive" src="img/suit-item.jpeg" alt="suit item one">
+						</div>
+					</div>
+					<!--The second part of the internal grid where the item descriptions are-->
+					<div class="item-text col-sm-8 col-md-8">
+						<h3 class="suit-item-title">2-Piece Suit in Sand Gold</h3>
+							<p class="suit-item-details">Elevate your formal attire with our impeccably tailored 2-Piece Suit in Sand Gold, exuding timeless sophistication and refined style.</p>
+							<p class="suit-item-details">Available in bespoke sizings.</p>
+							<br class="price-break">
+							<p class="suit-item-price">$3000</p>
+					</div>		
+				</div>
+			</div>
+
+			<div class="clearfix visible-lg visible-md visible-sm"></div>
+
+			<div class="suit-item-tile col-lg-6 col-md-6 col-sm-6">
+				<div class="row">
+					<!--The internal grid, this is the first, aka the suit item photo-->
+					<div class="col-sm-4 col-md-4 ">
+						<div class="suit-item-photo">
+							<div class="glyphicon glyphicon-hourglass"></div>
+							<img class="img-responsive" src="img/suit-item.jpeg" alt="suit item one">
+						</div>
+					</div>
+					<!--The second part of the internal grid where the item descriptions are-->
+					<div class="item-text col-sm-8 col-md-8">
+						<h3 class="suit-item-title">2-Piece Suit in Sand Gold</h3>
+							<p class="suit-item-details">Elevate your formal attire with our impeccably tailored 2-Piece Suit in Sand Gold, exuding timeless sophistication and refined style.</p>
+							<p class="suit-item-details">Available in bespoke sizings.</p>
+							<br class="price-break">
+							<p class="suit-item-price">$3000</p>
+					</div>	
+				</div>
+			</div>
+
+	
+
+			<div class="suit-item-tile col-lg-6 col-md-6 col-sm-6">
+				<div class="row">
+					<!--The internal grid, this is the first, aka the suit item photo-->
+					<div class="col-sm-4 col-md-4">
+						<div class="suit-item-photo">
+							<div class="glyphicon glyphicon-hourglass"></div>
+							<img class="img-responsive" src="img/suit-item.jpeg" alt="suit item one">
+						</div>
+					</div>
+					<!--The second part of the internal grid where the item descriptions are-->
+					<div class="item-text col-sm-8 col-md-8">
+						<h3 class="suit-item-title">2-Piece Suit in Sand Gold</h3>
+							<p class="suit-item-details">Elevate your formal attire with our impeccably tailored 2-Piece Suit in Sand Gold, exuding timeless sophistication and refined style.</p>
+							<p class="suit-item-details">Available in bespoke sizings.</p>
+							<br class="price-break">
+							<p class="suit-item-price">$3000</p>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+
+
+
+		
+</div>
+
+	<!--End of the main content of the front page-->
+
+<!--Footer-->
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+		  	<section id="hours" class="col-sm-4">
+	          <span>Hours:</span><br>
+	          Mon-Fri: 12pm - 9:00pm<br>
+	          Sat-Sun: 12pmm - 8pm
+	          <hr class="visible-xs">
+        	</section>
+        	<section id="address" class="col-sm-4">
+	          <span>Address:</span><br>
+	          685 5th Ave,<br>
+	           New York, NY 10022
+	          <hr class="visible-xs">
+        	</section>
+        	<section id="motto" class="col-sm-4">
+          <span>Like no one else.</span>
+          <p>We believe in pushing the boundaries of style and challenging conventional norms.</p> <p>We strive to redefine fashion by creating unique, trendsetting pieces that inspire self-expression and individuality.</p>
+        </section>
+		</div>
+	</div>
+</footer>
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

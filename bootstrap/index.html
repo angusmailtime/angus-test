@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angled Asymmetry Official Website</title>
+	<!--linking to style sheets-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--linking to the Google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<!--Content of the front page starts now-->
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<!--Container for the header-->
+			<div class="container">
+				<div class="navbar-header"><!--Top left clickable logo image-->
+					<a href="index.html" class="pull-left visible-sm visible-md visible-lg" ><div id="logo-img" alt="Logo Image"></div></a> 
+				</div>
+				<div class="navbar-brand pull-left"><!--Company name and slogan-->
+					<a href="index.html"><h1 id="company-name">Angled Asymmetry</h1></a>
+					<span class="visible-sm visible-md visible-lg">Like no one else.</span>
+					<span class="visible-xs">Like no one else. <a id="phone-link" href="tel:1234567890">&nbsp;&nbsp;123-456-7890 BEGIN.</a></span>
+				</div>
+				
+				<!--responsive menu and button, from bootstrap 3.4.1 documentation online-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+
+		      	<!--ul of the items inside the menu, from bootstrap 3.4.1 documentation online-->
+			    <div id="collapsable-nav" class="collapse navbar-collapse">
+		           <ul id="nav-list" class="nav navbar-nav navbar-right">
+		           	<li class="visible-xs active">
+		              <a id="home-menu" href="index.html">
+		                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+		            </li>
+		            <li>
+		              <a href="catalog.html">
+		                <span class="glyphicon glyphicon-qrcode"></span><br class="hidden-xs"> Catalog</a>
+		            </li>
+		            <li>
+		              <a href="aboutus.html"><!--or could be relative link to the area of the index.html-->
+		                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+		            </li>
+		            <li>
+		              <a href="location.html"><!--or could be relative link to the area of the index.html-->
+		                <span class="glyphicon glyphicon-map-marker"></span><br class="hidden-xs"> Location</a>
+		            </li>
+		            <li id="phone" class="hidden-xs">
+		              <a href="tel:410-602-5008">
+		                <span>123-456-7890</span><div>Begin.</div></a>
+		            </li>
+		          </ul><!-- #nav-list -->
+	        	</div><!-- .collapse .navbar-collapse -->
+ 			</div><!-- .container-->
+		</nav><!--.navbar .navbar-default-->
+	</header><!--header end-->
+
+	<!--Container for the jumbotron-->
+	<div id="main-content" class="container">
+		<div class="jumbotron">
+			<img src="img/jumbotron-1200.jpeg" alt="Picture of the storefront" 
+			class="img-responsive visible-xs visible-sm visible-md visible-lg">
+		</div>
+	<!--home tiles-->
+		<div id="home-tiles" class="row"></div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+        		<a href="catalog.html"><div id="clothing-tile"><span>clothing</span></div></a>
+     	    </div>
+      		<div class="col-md-4 col-sm-6 col-xs-12">
+        		<a href="sale.html"><div id="sale-tile"><span>Sale</span></div></a>
+     	 	</div>
+	     	 <div class="col-md-4 col-sm-12 col-xs-12">
+	     	 	<a href="https://goo.gl/maps/TiRgkuSu4p2jYu2h7" target="_blank"> <!--_blank is to open new window-->
+	     	 		<div id="map-tile">
+     	 				<span>Location</span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.053323836627!2d-73.98011210977658!3d40.760851897608184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fbb703639f%3A0xa463c0d89444abd3!2sCOACH!5e0!3m2!1sen!2shk!4v1691654115285!5m2!1sen!2shk" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>Location</span>
+	     	 			</div></a>
+	</div>
+	</div> <!--End of the main content of the front page-->
+
+<!--Footer-->
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+		  	<section id="hours" class="col-sm-4">
+	          <span>Hours:</span><br>
+	          Mon-Fri: 12pm - 9:00pm<br>
+	          Sat-Sun: 12pmm - 8pm
+	          <hr class="visible-xs">
+        	</section>
+        	<section id="address" class="col-sm-4">
+	          <span>Address:</span><br>
+	          685 5th Ave,<br>
+	           New York, NY 10022
+	          <hr class="visible-xs">
+        	</section>
+        	<section id="motto" class="col-sm-4">
+          <span>Like no one else.</span>
+          <p>We believe in pushing the boundaries of style and challenging conventional norms.</p> <p>We strive to redefine fashion by creating unique, trendsetting pieces that inspire self-expression and individuality.</p>
+        </section>
+		</div>
+	</div>
+</footer>
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

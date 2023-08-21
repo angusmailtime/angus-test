@@ -1,0 +1,528 @@
+/*High level overall styling*/
+
+* {box-sizing: border-box; margin: 0;}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #002fa7;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+/** HEADER area **/
+#header-nav {
+  background-color: #f1742a;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../img/shop-logo.png') no-repeat;
+  width: 125px;
+  height: 125px;
+ }
+
+
+/** Company name and slogan **/
+.navbar-brand {
+  margin-top: 10px;
+}
+
+/** Company name **/
+.navbar-brand h1 { 
+  font-family: 'Bebas Neue', sans-serif;
+  color: #002fa7;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  padding: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #002fa730;
+}
+
+/** Company Slogan**/
+.navbar-brand span {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #002fa7;
+}
+
+
+/** Navigation list **/
+#nav-list.navbar-nav>.active>#home-menu { /*this sets the menu style when the page is active*/
+  background-color:#002fa7;
+  margin-top: -5px;
+}
+
+#nav-list.navbar-nav>.active>#home-menu:hover {
+  background-color:#002fa7;
+}
+
+#nav-list .active #home-menu {
+  color: #f1742a;
+  padding-top: 20px;
+  border-radius: 0 0 5px 5px;
+
+}
+
+#nav-list {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+#nav-list a {
+  color: #002fa7;
+}
+
+#nav-list a:hover, #nav-list a:focus {
+  text-shadow: 1px 1px 1px #002fa730;
+}
+
+#phone {
+  margin-top:2px;
+  text-align: left;}
+
+#phone div {
+  margin-left: 1px;
+}
+
+/** menu button **/
+.navbar-default .navbar-toggle {
+  border: 2px solid #002fa7;
+  clear: right;
+}
+
+.navbar-default .navbar-collapse {
+  border-top: 3px solid #002fa7;
+}
+
+.navbar-toggle .icon-bar {
+  border: 1px solid #002fa7 ;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #002fa730;
+}
+
+#header-nav.navbar.navbar-default {margin-bottom: 0px;} 
+/*End Header*/
+
+
+/*Main Content*/
+
+.container .jumbotron {
+  padding: 0px;
+  margin-bottom: 0;
+  }
+
+.col-md-4, .col-sm-6, .col-xs-12 {
+  padding: 0;
+}
+
+#clothing-tile, #sale-tile, #map-tile {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#clothing-tile span, #sale-tile span, #map-tile span {
+  position: absolute;
+  text-align: right;
+  padding-right: 15px;
+  padding-bottom: 0;
+  padding-top: 2px;
+  bottom: 0px;
+  width: 100%;
+  font-family: 'Bebas Neue', sans-serif ;
+  color: #002fa7;
+  background-color: #f1742a80;
+}
+
+#clothing-tile span:hover, #sale-tile span:hover, #map-tile span:hover {
+  background-color: #f1742a;
+  transition: 1s ease;
+}
+
+#clothing-tile {
+  background: url(../img/clothing-tile.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#sale-tile {
+  background: url(../img/sale-tile.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*end of the main content
+
+Footer*/
+
+.panel-footer {
+  background-color: #f1742a;
+  color: #002fa7;
+  font-family: 'Bebas Neue', sans-serif;
+  padding-top: 20px;
+  width: 100%;
+  border-top: 0;
+}
+
+.panel-footer span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.panel-footer p:nth-child(1) {
+  margin: 0;
+}
+
+
+/********Large Devices**********/
+@media (min-width: 1200px) {
+  .navbar-default .navbar-collapse {
+    border-top: 0px;
+}
+ 
+  #header-nav.navbar.navbar-default {
+    margin-bottom: 0px;
+  }
+
+  #header-nav .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .jumbotron {
+    background-color: #002fa7;
+  }
+
+  #main-content .jumbotron img {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  #main-content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;}
+
+}
+
+  .panel-footer .container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/********Medium Devices**********/
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /** change to smaller logo for md screens **/
+  #logo-img {
+  background: url('../img/shop-logo-md.png') no-repeat;
+  width: 65px;
+  height: 65px;
+ }
+  .navbar-brand {
+    margin-top: -2px;}
+
+  #nav-list {margin-top: -2px;
+   margin-bottom: -2px;
+  }
+
+  .navbar-default .navbar-collapse {
+  border-top: 0px;}
+
+ #clothing-tile {
+  border-bottom: 3px solid #002fa7;
+}
+
+  #sale-tile {
+  border-bottom: 3px solid #002fa7;
+}
+
+
+}
+
+
+
+
+/********Extra Small Devices**********/
+@media (max-width: 767px) {
+
+.navbar-brand {
+  margin-top: -2px;
+  margin-bottom: 20px;}
+
+.navbar-toggle {
+  padding: 10px 13px;
+  margin-top: 15px;
+}
+
+#nav-list a {
+  text-align: left;
+  }
+#collapsable-nav {
+  width: 105px;
+  float: right; 
+  margin-right: 8px;
+  margin-bottom: -5px;}
+
+.glyphicon {
+  margin-right: 4px;
+  font-size: 0.85em;}
+
+
+#header-nav.container {margin-bottom: 20px;}
+
+span.visible-xs a {
+  color: #002fa7;
+}
+ 
+#map-tile {height: 300px;}
+  iframe {height: 300px;}
+
+
+hr {
+  border-color: #002fa7;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#hours, #address, #motto {
+  text-align: center;
+
+}
+}
+
+/*END HOME PAGE
+
+
+Start Catalog Page*/
+
+
+.navbar-default .navbar-nav>.active>#catalog-menu { /*this sets the menu style when the page is active*/
+  background-color:#002fa7;
+  margin-top: -5px;
+}
+
+.navbar-default .navbar-nav>.active>#catalog-menu:hover {
+  background-color:#002fa7;
+}
+
+#nav-list .active.visible-xs #catalog-menu {
+  color: #f1742a;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#nav-list .active.visible-lg #catalog-menu {
+  color: #f1742a;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#catalog-title, #catalog-text {
+  color: #f1742a;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#catalog-text {
+   padding-bottom: 15px;
+}
+
+
+#suit {
+  background: url(../img/suit.jpeg) no-repeat;
+}
+#casual {
+  background: url(../img/casual.jpeg) no-repeat;
+}
+
+#holidays {
+  background: url(../img/holiday.jpeg) no-repeat;
+  }
+
+#ass {
+  background: url(../img/ass.jpeg) no-repeat;
+  }
+
+#suit, #casual, #holidays, #ass{
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid #f1742a;
+}
+
+#suit span, #casual span, #holidays span, #ass span {
+  position: absolute;
+ text-align: right;
+ padding-right: 15px;
+ padding-bottom: 0;
+ padding-top: 2px;
+  bottom: 0px;
+  width: 100%;
+  font-family: 'Bebas Neue', sans-serif ;
+  color: #002fa7;
+  background-color: #f1742a80;
+}
+
+#suit span:hover, #casual span:hover, #holidays span:hover, #ass span:hover{
+  background-color: #f1742a;
+  transition: 1s ease;}
+
+.col-md-12, .col-lg-3, .col-sm-12, .col-xs-6 {padding: 0px;}
+
+
+/*catalog page sizing
+
+For medium screens*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  #main-content #ass {
+    border-top: 0;
+  }
+
+  #suit, #casual, #holidays {
+    height: 300px;
+  }
+  #ass {
+    background: url('../img/ass-md.png') no-repeat; 
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+}
+
+/*For xs screens*/
+
+@media (max-width: 767px) {
+  #holidays, #ass {
+    border-top: 0;
+  }
+
+  #suit, #casual, #holidays, #ass {
+    height: 200px;
+}
+}
+
+
+/*End of Catalog Page
+
+
+2-piece suit Page*/
+
+
+
+#suit-title, #suit-text {
+  color: #f1742a;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#suit-text {
+   padding-bottom: 15px;
+}
+
+.suit-item-title, .suit-item-details, .suit-item-price {
+  font-family: 'Bebas Neue', sans-serif ;
+  color: #f1742a;
+}
+
+.suit-item-details{
+  font-size: 0.8em;
+}
+.suit-item-price {
+  font-size: 1.4em;
+}
+
+#suit-row {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item-text {
+  padding-right: 40px;
+  padding-left: 0px;
+}
+
+.suit-item-photo {
+  position: relative;
+  max-width: 150px;
+}
+
+.glyphicon.glyphicon-hourglass {
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  right: 3%;
+  top: 90%;
+  color: #f1742a;
+
+}
+
+/*sizing fix for the in between sizing*/
+@media (min-width: 768px) and (max-width: 1000px) {
+  .item-text {
+  padding-left: 20px;
+}
+  .price-break {
+    display: none;
+  }
+
+  .suit-item-price {
+    position: absolute;
+    top: 100%;
+  }
+
+  .suit-item-title,.suit-item-details {
+    margin-bottom: 0;
+  }
+
+}
+
+/*sizing for xs*/
+
+@media (max-width:767px) {
+.suit-item-title, .suit-item-details, .suit-item-price {
+  text-align: center;
+}
+.item-text {
+  padding: 0px;
+}
+
+.price-break {
+  display: none;
+}
+
+.suit-item-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+}
