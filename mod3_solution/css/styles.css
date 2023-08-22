@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+.navbar-default {
+	background-color: darkgrey;
+	border: 3px solid black;
+	border-radius: 0;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.navbar-nav {
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+#collapsable-nav {
+	border-top: 0px;
+}
+
+.dropdown li {
+	list-style-type: none;
+	text-align: center;
+	border-top: 3px solid black;
+}
+
+.dropdown a {
+	color: black;
+	font-size: 1.1em;
+}
+
+.dropdown ul {
+	padding-inline-start:0px;
+	background-color: white;
+}
+
+.navbar-header {
+	background-color: darkgrey;
+}
+
+.navbar-default .navbar-brand {
+	color: black;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.navbar-default .navbar-toggle.collapsed {
+	border: 2px solid black;
+	padding: 5px;
+	height: 40px;
+	
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar {
+	background-color: black;
+	height: 4px;
+	width:30px;
+}
+
+.navbar-default .navbar-toggle {
+	border: 2px solid white;
+	padding: 5px;
+	height: 40px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+	height: 4px;
+	width:30px;
+}
+
+h1 {
+	font-size: 2.1em;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+#main-text {
+	background-color: darkgrey;
+	height: 1000px;
+}
+
+#main-text p:nth-child(1) {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#main-content {
+
+}
