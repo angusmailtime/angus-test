@@ -40,14 +40,20 @@
 		      	<!--ul of the items inside the menu, from bootstrap 3.4.1 documentation online-->
 			    <div id="collapsable-nav" class="collapse navbar-collapse">
 		           <ul id="nav-list" class="nav navbar-nav navbar-right">
-		           	<li class="visible-xs active">
+		            <li class="visible-xs">
 		              <a id="home-menu" href="index.html">
 		                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
 		            </li>
-		            <li>
-		              <a href="catalog.html">
+		            <li class="active visible-xs">
+		              <a id="catalog-menu" href="catalog.html">
 		                <span class="glyphicon glyphicon-qrcode"></span><br class="hidden-xs"> Catalog</a>
 		            </li>
+
+		            <li class="active visible-sm visible-md visible-lg">
+		              <a id="catalog-menu" href="catalog.html">
+		                <span class="glyphicon glyphicon-qrcode"></span><br class="hidden-xs"> Catalog</a>
+		            </li>
+
 		            <li>
 		              <a href="aboutus.html"><!--or could be relative link to the area of the index.html-->
 		                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
@@ -67,9 +73,45 @@
 	</header><!--header end-->
 
 	<!--Container for the jumbotron-->
+<div id="main-content" class="container">
+	<h2 id="catalog-title" class="text-center">Catalog</h2>
+		<div id="catalog-text" class="text-center">Step into a world of refined luxury with Angled Asymmetry's catalog, featuring meticulously tailored suits and captivating accessories that exude sophistication and extravagance. Experience the epitome of sartorial excellence and elevate your style to new heights.</div>
+
 	
-	<!--The original content is placed under home-snippets.html in the snippets folder-->
-	<div id="main-content" class="container"></div>
+			<div class="col-md-4 col-lg-3 col-sm-4 col-xs-6">
+				<a href="suit.html">
+					<div id="suit" class="category-tile">
+						<span>2-Piece Suits</span>
+					</div>					
+				</a>
+			</div>
+			
+			<div class="col-md-4 col-lg-3 col-sm-4 col-xs-6">
+				<a href="">
+					<div id="casual"class="category-tile">			
+						<span>Casuals</span>
+					</div>					
+				</a>
+			</div>
+
+			<div class="col-md-4 col-lg-3 col-sm-4 col-xs-6">
+				<a href="">
+					<div id="holidays" class="category-tile">
+						<span>Holidays</span>
+					</div>					
+				</a>
+			</div>
+
+			<div class="col-md-12 col-lg-3 col-sm-12 col-xs-6">
+				<a href="">
+					<div height="600" width="300" id="ass" class="category-tile">
+						<span>Accessories</span>
+					</div>				
+				</a>
+			</div>
+	</section>
+		
+</div>
 
 	<!--End of the main content of the front page-->
 
@@ -100,7 +142,6 @@
 <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
